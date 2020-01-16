@@ -47,7 +47,15 @@ class PyBSVClient:
             raise Exception(
                 f"Unsupported currency: {currency} please use one of {SUPPORTED_CURRENCIES}"
             )
-        self.instance.key.get_balance(currency)
+        return self.instance.key.get_balance(currency)
 
     def get_address(self):
         return self.instance.key.address
+
+    def generate_wif(self, network):
+        if network not in SUPPORTED_NETWORKS:
+            raise Exception(
+                f"Unsupported network: {network} please use one of {SUPPORTED_NETWORKS}"
+            )
+        # This generates a new key for you and returns the wif (helpful if you want to setup new address)
+        return Key('', network=network).to_wif()
