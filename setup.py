@@ -9,7 +9,7 @@ with open(path.join(this_directory, "README.md"), encoding="utf-8") as f:
 
 setup(
     name="pybsv",
-    version="0.0.4",
+    version="0.0.5",
     description="An easy to use Python BSV client.",
     url="http://github.com/jannainm/pybsv",
     author="jannainm",
