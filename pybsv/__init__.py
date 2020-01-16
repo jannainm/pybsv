@@ -58,4 +58,4 @@ class PyBSVClient:
                 f"Unsupported network: {network} please use one of {SUPPORTED_NETWORKS}"
             )
         # This generates a new key for you and returns the wif (helpful if you want to setup new address)
-        return Key('', network=network).to_wif()
+        return Key("", network=network).to_wif()
