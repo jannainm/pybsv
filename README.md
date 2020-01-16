@@ -1,15 +1,19 @@
 # pybsv
-
+  
 [![PyPI version](https://badge.fury.io/py/pybsv.svg)](https://badge.fury.io/py/pybsv)
+
+Wrapping `bitsv` - https://github.com/AustEcon/bitsv
 
 **Description:** An easy to use Python BSV library.
 
 **Install:**
-```
+
+```bash
 pip install pybsv
 ```
 
 **Usage**:
+
 ```python
 from pybsv import PyBSVClient
 # SUPPORTED_NETWORKS = [MAIN_NETWORK_TYPE, SCALING_NETWORK_TYPE, TEST_NETWORK_TYPE]
@@ -28,7 +32,11 @@ print(trans_id)
 ```
 
 **Upload to PyPi:**
+
+```bash
+python setup.py sdist
+python setup.py bdist_wheel
+twine upload dist/*whl dist/*gz
 ```
-python setup.py sdist upload
-```
+
 *Do this from the root of this project.
