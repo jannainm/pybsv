@@ -26,3 +26,9 @@ print(client.get_address())
 trans_id = client.send_bsv('Destination Wallet Address Here', 0.10, USD_CURRENCY_KEY) # Send $0.10 worth of BSV
 print(trans_id)
 ```
+
+**Upload to PyPi:**
+```
+python setup.py sdist upload
+```
+*Do this from the root of this project.
