@@ -10,7 +10,7 @@ pip install pybsv
 ```
 
 **Usage**:
-```
+```python
 from pybsv import PyBSVClient
 # SUPPORTED_NETWORKS = [MAIN_NETWORK_TYPE, SCALING_NETWORK_TYPE, TEST_NETWORK_TYPE]
 client = PyBSVClient('Your WIF Private Key Here', network=pybsv.TEST_NETWORK_TYPE)
